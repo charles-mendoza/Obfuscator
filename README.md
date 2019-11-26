@@ -9,7 +9,7 @@ Just include Obfuscation.h and obfuscate all the way!
 Examples
 --------
 Obfuscate strings:
-```
+```cpp
 #define OBFUSCATE_STRINGS // to enable string obfuscation
 include "Obfuscation.h"
 ...
@@ -17,7 +17,7 @@ XOR("This is an obfuscated string");
 XORW(L"This is an obfuscated wide string");
 ```
 Obfuscate function calls:
-```
+```cpp
 IFN(LoadLibraryA)("user32.dll"); // load the DLL where the MessageBoxA function is located
 IFN(MessageBoxA)(NULL, "Hello World!", "Info", MB_OK); // make obfuscated function call
 ```
